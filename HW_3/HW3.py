@@ -1,5 +1,9 @@
 # 1. Найти НОК двух чисел
 
+from cmath import sqrt
+from random import randint
+
+
 def gcd(x, y):
     while x != 0 and y != 0:
         if x >= y:
@@ -17,6 +21,8 @@ print((number1*number2)//gcd(number1,number2))
 
 # 2.	Вычислить число Пи c заданной точностью d
 # Пример: при d = 0.001,  c= 3.141. 
+
+# The Gregory series
 
 d = float(input('Введите точность для числа Пи: '))
 n=0
@@ -41,7 +47,7 @@ print (Pi)
 N = int(input('Введите число: '))
 prime_factors = []
 i = 2
-while i <= (int(math.sqrt(N))):
+while i <= (int(sqrt(N))):
     if N % i == 0:
         prime_factors.append(i)
         N//=i
