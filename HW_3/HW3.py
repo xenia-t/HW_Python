@@ -15,7 +15,7 @@ def gcd(x, y):
 number1 = int(input('Введите первое число: '))
 number2 = int(input('Введите второе число: '))
 
-print((number1*number2)//gcd(number1,number2))    
+print(f'НОК чисел {number1} и {number2} = {(number1*number2)//gcd(number1,number2)}')    
 
 
 
@@ -55,7 +55,7 @@ while i <= (int(sqrt(N))):
         i+=1
 if N > 1:
     prime_factors.append(N)
-print(prime_factors)
+print(f'Простые множители числа {N}: {prime_factors}')
 
 # 4.	Дана последовательность чисел. Получить список неповторяющихся элементов исходной последовательности
 # Пример: [1, 2, 3, 5, 1, 5, 3, 10] => [1, 2, 3, 5, 10]
